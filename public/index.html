@@ -45,7 +45,9 @@ socket.io que la libreria del backend -->
   <script>
     //Path al servidor de sockets. Al recargar el navegador,
     //deberia verse en la consola de Node "cliente conectado"
-    const socket = io('http://localhost:8080');  
+    //Esta cadena corresponde al URL que se despliega en el navegador
+    //al darle open app al backend  en Heroku
+    const socket = io('https://react-sockets-lga.herokuapp.com/');  
 
     const formulario = document.querySelector('#miFormulario');
     const mensajes   = document.querySelector('#misMensajes');
